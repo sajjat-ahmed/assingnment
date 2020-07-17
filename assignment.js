@@ -1,4 +1,4 @@
-// feetToMile
+// // feetToMile
 function feetToMile(feet){
     var mile = feet * 0.000189394;
     if(mile < 0){
@@ -10,7 +10,7 @@ var result = feetToMile(1000);
 console.log(result);
 
 
-// woodCalculator
+// // woodCalculator
 function woodCalculator(chare, table, bed){
     var chareCount = chare * 1;
     var tableCount = table * 2;
@@ -25,19 +25,27 @@ var woodResult = woodCalculator(2, 5, 2);
 console.log(woodResult);
 
 
-// brickCalculator
+// // brickCalculator
+function brickCalculator(){
+
+}
+
+var building = 100;
+
+
+
 
 
 // tinyFriend
-function tinyFriend(numbers){
-    var largest = numbers[0];
-    for(var i = 0; i<numbers.length; i++){
-        var currentNumber = numbers[i];
-        if(currentNumber > largest){
-            largest = currentNumber;
+function tinyFriend(tiny){
+    var min = tiny[0];
+    for(var i = 0; i < tiny.length; i++){
+        var element = tiny[i];
+        if(element > min){
+            min = element;
         }
     }
-    return largest;
+    return min;
 }
-var largestNumber = tinyFriend([12,23,323,432]);
-consolee.log(largestNumber);
+var minName = tinyFriend(['ahmed', 'Siam', 'Sakin', 'Sajjat']);
+console.log(minName);
