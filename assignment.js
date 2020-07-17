@@ -25,15 +25,22 @@ var woodResult = woodCalculator(2, 5, 2);
 console.log(woodResult);
 
 
-// // brickCalculator
-function brickCalculator(){
-
+//brickCalculator
+function brickCalculator(depth) {
+    var brick = 0;
+    if (depth <= 10) {
+        brick1 = depth * 15 * 1000;
+    } 
+    else if (depth <= 20) {
+        brick2 = depth * 12 * 1000;
+    }
+    else {
+        brick3 = depth * 10 * 1000;
 }
-
-var building = 100;
-
-
-
+    return brick;
+}
+var count = brickCalculator(40);
+console.log(count);
 
 
 // tinyFriend
@@ -42,10 +49,10 @@ function tinyFriend(tiny){
     for(var i = 0; i < tiny.length; i++){
         var element = tiny[i];
         if(element > min){
-            min = element;
+            element = min;
         }
     }
     return min;
 }
-var minName = tinyFriend(['ahmed', 'Siam', 'Sakin', 'Sajjat']);
+var minName = tinyFriend(['Siam', 'Sakin', 'Sajjat']);
 console.log(minName);
