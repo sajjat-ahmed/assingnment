@@ -29,13 +29,13 @@ console.log(woodResult);
 function brickCalculator(depth) {
     var brick = 0;
     if (depth <= 10) {
-        brick1 = depth * 15 * 1000;
+        brick = depth * 15 * 1000;
     } 
     else if (depth <= 20) {
-        brick2 = depth * 12 * 1000;
+        brick = depth * 12 * 1000;
     }
     else {
-        brick3 = depth * 10 * 1000;
+        brick = depth * 10 * 1000;
 }
     return brick;
 }
